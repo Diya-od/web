@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+	            url("WhatsApp Image 2025-05-29 at 08.50.51_60d73e8d.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.navbar {
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	margin: auto;
+    padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon {
+	width: auto;
+}
+
+.logo {
+	color: #ff7200;
+	font-size: 35px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	margin: 15px;
+	font-size: 14px;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+	color: #ff7200;
+}
+
+.search {
+	display: flex;
+	margin-left: 20px;
+	margin-top: 14px;
+}
+
+.srch {
+	width: 200px;
+	height: 40px;
+	background: transparent;
+	border: 1px solid #ff7200;
+	color: white;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 5px 0 0 5px;
+}
+
+.btn {
+	width: 100px;
+	height: 40px;
+	background-color: #ff7200;
+	border: none;
+	color: white;
+	font-size: 15px;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.content {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	color: white;
+	position: relative;
+	padding: 20px;
+}
+
+.content h1 {
+	font-size: 50px;
+	margin-top: 10%;
+}
+
+.content span {
+	color: #ff7200;
+	font-size: 60px;
+}
+
+.content p {
+	line-height: 30px;
+}
+
+.cn {
+	width: 160px;
+	height: 40px;
+	background: #ff7200;
+	border: none;
+	margin-top: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.cn a {
+	text-decoration: none;
+	color: black;
+	transition: .3s ease;
+}
+
+.cn:hover {
+	background-color: white;
+}
+
+.form {
+	width: 250px;
+	height: auto;
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 120px;
+	left: 470px;
+	border-radius: 10px;
+	padding: 25px;
+}
+
+.form h2 {
+	text-align: center;
+	color: #ff7200;
+	margin-bottom: 20px;
+}
+
+.form input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 15px;
+	background: transparent;
+	border: 1px solid #ff7200;
+	color: white;
+	padding: 5px 10px;
+}
+
+.form .link {
+	color: white;
+	font-size: 12px;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.form .link a {
+	color: #ff7200;
+	text-decoration: none;
+}
+
+.liw {
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.icon a {
+	color: white;
+	font-size: 20px;
+	margin: 0 5px;
+}
+
+.icon ion-icon:hover {
+	color: #ff7200;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px;
+	}
+
+	.menu {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	ul {
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+	}
+
+	ul li {
+		margin: 10px 0;
+	}
+
+	.search {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.content h1 {
+		font-size: 36px;
+	}
+
+	.content span {
+		font-size: 40px;
+	}
+
+	.form {
+		position: static;
+		margin: 20px auto;
+	}
+}
